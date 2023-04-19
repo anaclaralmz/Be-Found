@@ -1,0 +1,122 @@
+html, body{
+    height: 100%;
+}
+
+.sidebar{
+    width: 8.22%;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: 3px 4px 45px rgba(0, 0, 0, 0.08);
+    position: relative;
+}
+
+.sidebar a svg{
+    margin-top: 25%;
+    width: 22px;
+    height: 22px;
+    color: #000000;
+}
+
+.sidebar a img{
+    margin-top: 25%;
+    width: 22px;
+    height: 22px;
+}
+
+.sidebar a{
+    text-align: center;
+    margin-top: 6px;
+    margin-bottom: 35px;
+    width: 55px;
+    height: 55px;
+}
+
+.sidebar a svg:hover{
+    color: #0370AB;
+    background-color: #EEFBFF;
+}
+.sidebar a:hover{
+    color: #0370AB;
+
+    background-color: #EEFBFF;
+    border-radius: 100%;
+}
+
+.sidebar a{
+    border-radius: 100%;
+}
+
+nav div{
+    position: relative;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    margin: 5% auto auto auto;
+}
+
+#divLogo{
+    position: static;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    margin: 0;
+    text-align: center;
+}
+
+#logo{
+    width: 80px;
+    height: 91px;
+    margin-left: 12px;
+}
+
+#navbar{
+    background-color: #ffffff;
+    position: fixed;
+    height: 12%;
+    width: 100%;
+}
+
+#nomeMapa{
+    margin-left: 11%;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 18px;
+
+}
+
+#nomePerfil{
+    margin-left: 60%;
+    margin-top: 25px;
+    font-size: 15px;
+}
+
+#fotoPerfil{
+    border-radius: 100%;
+    height: 50px;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+
+#iconeSeta{
+    margin-top: 30px;
+    margin-right: 10px;
+}
+
+#iconeMapa{
+    margin-top: 30px;
+    margin-left: 60px;
+}
+
+
+
+
+/* --------INPUTS---------- */
+
+.rectangleInput{
+    position: absolute;
+    width: 320px;
+    height: 55px;
+    left: calc(50% - 320px/2 - 368px);
+    top: calc(50% - 55px/2 - 163.5px);
+
+    background: #F2F2F2;
+    border-radius: 4px;
+}

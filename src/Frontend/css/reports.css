@@ -1,0 +1,126 @@
+/* html, body{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    height: 100%;
+    width: 100%;
+} */
+
+body{
+    /* max-width: 1200px; */
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.containerr{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 0.5fr 0.5fr 2fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 2fr 1fr;
+    grid-template-areas: 
+                        "aside nav nav nav nav nav"
+                        "aside main main main main main"
+                        "aside main main main main main"
+                        "aside main main main main main";
+}
+
+nav{
+    /* background-color: rgb(140, 116, 88); */
+    grid-area: nav;
+    /* padding-top: var(--main-padding); */
+}
+
+main{
+    background-color: #F6F7FA;
+    grid-area: main;
+    /* padding-top: var(--main-padding); */
+}
+
+aside{
+    /* background-color: rgb(132, 87, 37); */
+    grid-area: aside;
+    /* padding-top: var(--main-padding); */
+}
+
+
+
+
+
+@media screen and (max-width:768px){
+    .mainainer{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.2fr 1fr 1fr 1fr 0.2fr;
+        grid-template-areas: 
+                            "nav nav"
+                            "aside main"
+                            "mainent1 mainent1"
+                            "mainent2 mainent3";
+    }
+}
+
+@media screen and (max-width:480px){
+    .mainainer{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr ;
+        grid-template-areas: 
+                            "nav"
+                            "aside"
+                            "main"
+                            "mainent1"
+                            "mainent2"
+                            "mainent3"
+                            "footer";
+    }
+}
+
+/* ----------------codigo reset------------ */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}

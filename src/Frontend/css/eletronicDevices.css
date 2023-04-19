@@ -1,0 +1,680 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+html, body{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #F6F7FA;;
+}
+
+.sidebar a svg{
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar a{
+    margin-bottom: 51%;
+    width: 55px;
+    height: 55px;
+    color: #000000;
+}
+
+.sidebar a:hover{
+    color: #01939F;;
+}
+
+.sideicones:hover{
+    background-color: #01929f34;
+    border-radius: 100%;
+}
+
+nav div{
+    position: relative;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    margin: 5% auto auto auto;
+}
+
+#divLogo{
+    margin: 0;
+    text-align: center;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#logo{
+    width: 80px;
+    height: 91px;
+    /* margin-left: 15%; */
+    text-align: center;
+}
+
+#nomePagina{
+    margin-left: 2%;
+    text-align: center;
+    font-size: 19px;
+    font-family: 'Abel', sans-serif;
+    font-weight:normal;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#nomePerfil{
+    position:absolute;
+    margin-left: 85%;
+    font-size: 15px;
+    font-family: 'Abel', sans-serif;
+    font-weight:normal;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#iconeSeta{
+    /* display: flex; */
+    position: absolute;
+    border: none;
+    background:none;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 92%;
+}
+
+#setinha{
+    background: #01939F;
+    display: flex;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#iconeMapa{
+    margin-top: 30px;
+    margin-left: 60px;
+}
+
+#ezoffice{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.sidebar{
+    background-color: #ffffff;
+    grid-area: sidebar;
+    box-shadow: 3px 4px 45px rgba(0, 0, 0, 0.08);
+    position: relative;
+    z-index: 2;
+}
+
+.navbar{
+    background-color: #ffffff;
+    grid-area: navbar;
+    position: relative;
+    z-index: 1;
+    /* text-align: center; */
+
+}
+
+/* PAGINA DISPOSITIVOS ELETRONICOS */
+
+.containerr{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 0.4fr 1.2fr 1fr 1fr 1fr;
+    grid-template-rows: 75px 30px 80px 95px 1.0fr 1.0fr;
+    grid-template-areas: 
+                        "sidebar navbar navbar navbar navbar"
+                        "sidebar aside navpag navpag navpag"
+                        "sidebar aside status status status"
+                        "sidebar aside title title title"
+                        "sidebar aside info info info"
+                        "sidebar aside info info info";
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+
+#sideBar{
+    background-color: white;
+    grid-area: sidebar;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+#navBar{
+    background-color: #01939F;
+    grid-area: navbar;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+#navpag{
+    background-color: #F6F7FA;;
+    grid-area: navpag;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    padding-left: 4vh;
+}
+
+#statusContent{
+    background-color: #F6F7FA;;
+    grid-area: status;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+#list{
+    background-color: white;
+    grid-area: aside;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+#info{
+    background-color: #F6F7FA;;
+    grid-area: info;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+#titleDevices{
+    background-color: #F6F7FA;;
+    grid-area: title;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+/* Lista de dispositivos */
+
+/* electronic devices top list */
+.topList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topList p {
+    font-family: 'Inter', sans-serif ;font-size: 16px;
+    padding-left: 13px;
+    /* margin-top: 20px; */
+    margin-bottom: 0;
+    
+}
+
+/* active location number background */
+.activeLocations{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 22px;
+    background: #F9F6FD;
+    border-radius: 100px;
+}
+
+.activeLocations p{
+    color: #0370AB;
+    margin: 0;
+    padding: 0;
+}
+
+/* icons electronic devices top list */
+.iconsTopList{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 5px;
+}
+
+.buttonsTopList {
+    margin: 0;
+    border: none;
+    background-color: white;
+}
+
+.dropdown button{
+    display: flex;
+    justify-content: center;
+}
+
+.cleanClass{
+    color: red;
+}
+
+.dropdown h5{
+    font-family: 'Inter', sans-serif ;font-size: 14px;
+    text-align: center;
+    color: #0370AB;
+}
+
+.dropdown-menu button{
+    font-family: 'Inter', sans-serif ;font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.01em;
+}
+
+.dropdown-menu button:hover{
+    color: #0370AB;
+    font-weight: bold;
+}
+
+.dropdown-menu button:focus{
+    color: white;
+    font-weight: bold;
+}
+
+/* electronic devices listed specifically */
+.geralDevices{
+    display: flex;
+    flex-direction: column;
+}
+
+.devices{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 13px;
+    padding-right: 13px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.textDevices{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.mapPinList{
+    margin: 0;
+}
+
+.circleFillGreenList{
+    margin-right: 1vh;
+}
+
+.imgCategoryDevice{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+/* name and update of electronic devices, paragraphs specifically */
+.textDevices p{
+    font-family: 'Inter', sans-serif ;font-size: 12px;
+    text-align: start;
+    margin: 0;
+}
+
+/* electronic device category */
+.textCategory{
+    font-family: 'Inter', sans-serif ;font-size: 14px;
+    color: white;
+    box-sizing: border-box;
+    width: 76px;
+    height: 20px;
+    background: #231F20;
+    border-radius: 100px;
+    margin-left: 1vh;
+    margin-bottom: 0;
+    justify-content: end;
+}
+
+.textCategory p {
+    margin: 0;
+}
+
+.buttonDevices{
+    padding: 0;
+    border: none;
+    margin: none;
+    background-color: white;
+}
+
+/* device list status ball */
+.svgCircle{
+    padding-left: 2vh;
+    padding-right: 2vh;
+    padding-top: 3vh;
+    margin-left: 0;
+}
+
+/* Navegar de páginas */
+.navPag{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+.navPag p{
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 4vh;
+    margin: 0;
+}
+
+#pageOne {
+    color: #0370AB;
+    box-sizing: border-box;
+    border: 1px solid #0370AB;
+    border-radius: 100px;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    margin-right: 2vh;
+}
+
+#pageTwo {
+    color: #0370AB;
+    box-sizing: border-box;
+    border: 1px solid #0370AB;
+    border-radius: 100px;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    margin-right: 2vh;
+}
+
+#pageThree {
+    color: #0370AB;
+    box-sizing: border-box;
+    border: 1px solid #0370AB;
+    border-radius: 100px;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    margin-right: 2vh;
+}
+
+.bttnPagNav{
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+}
+
+.perimeterDiv{
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    width: 93%;
+    margin: auto;
+    height: 95%;
+    align-items: center;
+}
+
+.contentPerimeter {
+    width: 100%;
+    align-items: center; 
+}
+/* Tittle device page */
+
+.tittleDevices{
+    flex-flow: wrap;
+    font-family: 'Inter', sans-serif;
+    margin-left: 5vh;
+}
+
+.tittlePag{
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    height: 7vh;
+}
+
+.tittlePag svg{
+    padding-top: 2vh;
+    padding-left: 2vh;
+}
+
+.register{
+    height: 6vh;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.register p{
+    font-size: 12px;
+}
+
+.registerr{
+    height: 6vh;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.registerr p{
+    font-size: 12px;
+}
+
+.circleFillGreenInfo{
+    width: 35%;
+    height: 35%;
+    margin-top: 3px;
+    padding-right: 1vh;
+    padding-left: 2vh;
+}
+.connectDevide{
+    display: flex;
+    justify-content: end;
+    padding-left: 10px;
+}
+
+.connectDevide svg{
+    padding-top: 15px;
+    padding-right: 1vh;
+    padding-left: 1vh;
+}
+
+.connectDevide p{
+    color: #19B69B;
+}
+
+.mapPinDeviceInfo{
+    margin-top: 3px;
+}
+.tittlePag h5{
+    padding-top: 3vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Device status */
+
+.deviceStatus{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cardStatusDevice{
+    font-family: 'Inter', sans-serif ;font-size: 14px;
+    background-color: rgb(255, 255, 255);
+    width: 250px;
+    height: 60px;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.currentLocation{
+    width: 19%;
+}
+
+.lastLocation{
+    width: 20%;
+}
+
+.perimeterLocation{
+    width: 19%;
+
+}
+
+.imgInfo{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-top: 6px;
+    padding-left: 6px;
+}
+.perimeterGreen{
+    margin-left: 10px;
+    width: 17%;
+    margin-bottom: 2px;
+}
+
+ .spaceTextDevice {
+    padding-left: 1vh;
+    margin: 0;
+} 
+
+.lastInfoDev{
+    margin: 0;
+    padding-left: 10px;
+    color: #0370AB;
+}
+
+
+#imgPerimeter{
+    padding-left: 5vh;
+}
+
+/* Device infos page */
+
+.moreButton{
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: #F6F7FA;
+}
+
+.topInfoDevice{
+    display: flex;
+    justify-content: flex-end;
+    height: 5vh;
+    padding-right: 5vh;
+}
+
+.topInfoDevice img {
+    padding-top: 1vh;
+    padding-right: 2vh;
+}
+.inputsDevice{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.oneInput{
+    width: 40%;
+}
+
+.twoInput{
+    width: 40%;
+}
+
+.inputsDevice label{
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    text-align: start;
+}
+
+.inputsDevice label, option{
+    font-family: 'Inter', sans-serif ;font-size: 14px;
+}
+
+
+input[type=text], select {
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 2px;
+    display: inline-block;
+    border: 1px solid #F2F2F2;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background: #F2F2F2;
+}
+
+input[type=text]::placeholder{
+    color: #000000;
+}
+
+
+.divButton {
+    margin-top: 0;
+    padding: 0;
+    display: contents;
+    justify-content: space-between;
+}
+
+.moreButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgMoreButt{
+    padding-bottom: 15px;
+}
+
+.btn img {  
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.btn span {  
+    padding-top: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    align-items: center;
+}
+
+.editSpan{
+    color: #02A0FC;
+}
+
+.attSpan{
+    color: #F2994A;
+}
+
+.removSpan{
+    color: #EB5757;
+}
+
+.inputTST{
+    background: red;
+}
+
+.volButton{
+    border: none;
+    background-color: #F6F7FA;
+}
+
+.histAtt{
+    width: 50%;
+    border-right: 1px solid black;
+}
+
+.histAnt{
+    width: 50%;
+    border-left: 1px solid black;
+}
